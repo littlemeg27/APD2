@@ -1,0 +1,266 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ravenmargret.academia.GradeScaleFragment">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Letter Grade"
+        android:id="@+id/letterGrade"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Number Grade"
+        android:id="@+id/numberGrade" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GPA Value"
+        android:id="@+id/gpa" />
+
+    <!--First Grade-->
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textCapCharacters"
+        android:hint="Letter Grade"
+        android:id="@+id/letterGrade1" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Grade 1"
+        android:id="@+id/firstGrade1"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Grade 2"
+        android:id="@+id/secondGrade1" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="GPA"
+        android:id="@+id/gpa1"/>
+
+    <!--Second Grade-->
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textCapCharacters"
+        android:hint="Letter Grade"
+        android:id="@+id/letterGrade2" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Grade 1"
+        android:id="@+id/firstGrade2"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Grade 2"
+        android:id="@+id/secondGrade2" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="GPA"
+        android:id="@+id/gpa2"/>
+
+    <!--Third Grade-->
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textCapCharacters"
+        android:hint="Letter Grade"
+        android:id="@+id/letterGrade3" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Grade 1"
+        android:id="@+id/firstGrade3"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Grade 2"
+        android:id="@+id/secondGrade3" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="GPA"
+        android:id="@+id/gpa3"/>
+
+    <!--Fourth Grade-->
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textCapCharacters"
+        android:hint="Letter Grade"
+        android:id="@+id/letterGrade4" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Grade 1"
+        android:id="@+id/firstGrade4"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Grade 2"
+        android:id="@+id/secondGrade4" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="GPA"
+        android:id="@+id/gpa4"/>
+
+    <!--Fifth Grade-->
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textCapCharacters"
+        android:hint="Letter Grade"
+        android:id="@+id/letterGrade5" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Grade 1"
+        android:id="@+id/firstGrade5"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Grade 2"
+        android:id="@+id/secondGrade5" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="GPA"
+        android:id="@+id/gpa5"/>
+
+    <!--Sixth Grade-->
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textCapCharacters"
+        android:hint="Letter Grade"
+        android:id="@+id/letterGrade6" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Grade 1"
+        android:id="@+id/firstGrade6"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Grade 2"
+        android:id="@+id/secondGrade6" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="GPA"
+        android:id="@+id/gpa6"/>
+
+    <!--Seventh Grade-->
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textCapCharacters"
+        android:hint="Letter Grade"
+        android:id="@+id/letterGrade7" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Grade 1"
+        android:id="@+id/firstGrade7"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Grade 2"
+        android:id="@+id/secondGrade7" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="GPA"
+        android:id="@+id/gpa7"/>
+
+    <!--Eighth Grade-->
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textCapCharacters"
+        android:hint="Letter Grade"
+        android:id="@+id/letterGrade8" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Grade 1"
+        android:id="@+id/firstGrade8"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Grade 2"
+        android:id="@+id/secondGrade8" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="GPA"
+        android:id="@+id/gpa8"/>
+
+</LinearLayout>

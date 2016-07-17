@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ravenmargret.academia.HomeFragment"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="40sp"
+        android:layout_gravity="center_vertical"
+        android:text="Academia"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/gpa"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="GPA"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/gpaTextView"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="3.8"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/average"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="Average"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/averageTextView"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="3.67"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/letterGradeFinal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="Letter Grade"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/letterGradeFinalTextView"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="A"/>
+
+</LinearLayout>
