@@ -2,7 +2,33 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.ravenmargret.academia.AddOnGoingFragment">
+    tools:context="com.example.ravenmargret.academia.AddOnGoingFragment"
+    android:orientation="vertical">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textCapWords"
+        android:hint="Project Name"
+        android:id="@+id/projectName"
+        android:layout_marginTop="15dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Project Weight"
+        android:id="@+id/projectWeight"
+        android:layout_marginTop="15dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="Project Grade"
+        android:id="@+id/projectGrade"
+        android:layout_marginTop="15dp"/>
+
 
 
 </LinearLayout>
