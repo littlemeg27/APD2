@@ -3,6 +3,7 @@ package com.example.ravenmargret.academia;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.os.Bundle;
+import android.support.annotation.IdRes;
 import android.support.design.widget.BottomSheetBehavior;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
@@ -35,7 +36,7 @@ public class AddFinishedActivity extends AppCompatActivity
             @Override
             public void onMenuTabSelected(@IdRes int menuItemId)
             {
-                if (menuItemId == R.id.bottomBarItemOne)
+                if (menuItemId == R.id.action_house)
                 {
                     // The user selected item number one.
                 }
@@ -44,22 +45,29 @@ public class AddFinishedActivity extends AppCompatActivity
             @Override
             public void onMenuTabReSelected(@IdRes int menuItemId)
             {
-                if (menuItemId == R.id.bottomBarItemOne)
+                if (menuItemId == R.id.action_house)
                 {
                     // The user reselected item number one, scroll your content to top.
                 }
             }
         });
 
+//        @Override
+//        protected void onSaveInstanceState(Bundle outstate)
+//        {
+//            super.onSaveInstanceState(outState);
+//            mBottomBar.onSaveInstanceState(outState);
+//        }
+
         // Setting colors for different tabs when there's more than three of them.
         // You can set colors for tabs in three different ways as shown below.
-        mBottomBar.mapColorForTab(0, ContextCompat.getColor(this, R.color.colorAccent));
-        mBottomBar.mapColorForTab(1, 0xFF5D4037);
-        mBottomBar.mapColorForTab(2, "#7B1FA2");
-        mBottomBar.mapColorForTab(3, "#FF5252");
-        mBottomBar.mapColorForTab(4, "#FF9800");
+//        mBottomBar.mapColorForTab(0, ContextCompat.getColor(this, R.color.colorAccent));
+//        mBottomBar.mapColorForTab(1, 0xFF5D4037);
+//        mBottomBar.mapColorForTab(2, "#7B1FA2");
+//        mBottomBar.mapColorForTab(3, "#FF5252");
+//        mBottomBar.mapColorForTab(4, "#FF9800");
 
-        }
+    }
 
 
 
