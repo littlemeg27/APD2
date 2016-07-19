@@ -2,27 +2,27 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/action_house"
+        android:id="@+id/action_home"
         android:orderInCategory="100"
-        android:title="@string/action_house"
-        android:icon="@drawable/ic_action_house"/>
+        android:title="@string/action_home"
+        android:icon="@drawable/homeicon"/>
 
     <item
         android:id="@+id/action_on_going"
         android:orderInCategory="100"
         android:title="@string/action_on_going"
-        android:icon="@drawable/ic_action_assignment"/>
+        android:icon="@drawable/assignmenticon"/>
 
     <item
         android:id="@+id/action_finished"
         android:orderInCategory="100"
         android:title="@string/action_finished"
-        android:icon="@drawable/ic_action_assignment_turned_in"/>
+        android:icon="@drawable/assignmentturnedinicon"/>
 
     <item
         android:id="@+id/action_grade_scale"
         android:orderInCategory="100"
         android:title="@string/action_grade_scale"
-        android:icon="@drawable/ic_maps_local_library"/>
+        android:icon="@drawable/gradescaleicon"/>
 
 </menu>

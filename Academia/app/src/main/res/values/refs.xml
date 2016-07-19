@@ -1,7 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <drawable name="ic_action_assignment">ic_action_assignment</drawable>
-    <drawable name="ic_action_assignment_turned_in">ic_action_assignment_turned_in</drawable>
-    <drawable name="ic_maps_local_library">ic_maps_local_library</drawable>
-    <drawable name="ic_action_house">ic_action_house</drawable>
+
 </resources>
