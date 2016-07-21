@@ -37,56 +37,53 @@ public class HomeActivity extends AppCompatActivity
             @Override
             public void onMenuTabSelected(@IdRes int menuItemId)
             {
-                if (menuItemId == R.id.action_home)
-                {
-                    Intent homeIntent = new Intent(HomeActivity.this, HomeActivity.class);
-                    startActivity(homeIntent);
-                }
-                else if(menuItemId == R.id.action_on_going)
-                {
-                    Intent onGoingIntent = new Intent(HomeActivity.this, OnGoingListActivity.class);
-                    startActivity(onGoingIntent);
-                }
-                else if (menuItemId == R.id.action_finished)
-                {
-                    Intent finishedIntent = new Intent(HomeActivity.this, FinishedListActivity.class);
-                    startActivity(finishedIntent);
-                }
-                else if (menuItemId == R.id.action_grade_scale)
-                {
-                    Intent gradeScaleIntent = new Intent(HomeActivity.this, GradeScaleActivity.class);
-                    startActivity(gradeScaleIntent);
-                }
+//                if (menuItemId == R.id.action_home)
+//                {
+//                    Intent homeIntent = new Intent(HomeActivity.this, HomeActivity.class);
+//                    startActivity(homeIntent);
+//                }
+//                else if(menuItemId == R.id.action_on_going)
+//                {
+//                    Intent onGoingIntent = new Intent(HomeActivity.this, OnGoingListActivity.class);
+//                    startActivity(onGoingIntent);
+//                }
+//                else if (menuItemId == R.id.action_finished)
+//                {
+//                    Intent finishedIntent = new Intent(HomeActivity.this, FinishedListActivity.class);
+//                    startActivity(finishedIntent);
+//                }
+//                else if (menuItemId == R.id.action_grade_scale)
+//                {
+//                    Intent gradeScaleIntent = new Intent(HomeActivity.this, GradeScaleActivity.class);
+//                    startActivity(gradeScaleIntent);
+//                }
             }
 
             @Override
             public void onMenuTabReSelected(@IdRes int menuItemId)
             {
-                if (menuItemId == R.id.action_home)
-                {
-                    Intent homeIntent2 = new Intent(HomeActivity.this, HomeActivity.class);
-                    startActivity(homeIntent2);
-                }
-                else if(menuItemId == R.id.action_on_going)
-                {
-                    Intent onGoingIntent2 = new Intent(HomeActivity.this, OnGoingListActivity.class);
-                    startActivity(onGoingIntent2);
-                }
-                else if (menuItemId == R.id.action_finished)
-                {
-                    Intent finishedIntent2 = new Intent(HomeActivity.this, FinishedListActivity.class);
-                    startActivity(finishedIntent2);
-                }
-                else if (menuItemId == R.id.action_grade_scale)
-                {
-                    Intent gradeScaleIntent2 = new Intent(HomeActivity.this, GradeScaleActivity.class);
-                    startActivity(gradeScaleIntent2);
-                }
+//                if (menuItemId == R.id.action_home)
+//                {
+//                    Intent homeIntent2 = new Intent(HomeActivity.this, HomeActivity.class);
+//                    startActivity(homeIntent2);
+//                }
+//                else if(menuItemId == R.id.action_on_going)
+//                {
+//                    Intent onGoingIntent2 = new Intent(HomeActivity.this, OnGoingListActivity.class);
+//                    startActivity(onGoingIntent2);
+//                }
+//                else if (menuItemId == R.id.action_finished)
+//                {
+//                    Intent finishedIntent2 = new Intent(HomeActivity.this, FinishedListActivity.class);
+//                    startActivity(finishedIntent2);
+//                }
+//                else if (menuItemId == R.id.action_grade_scale)
+//                {
+//                    Intent gradeScaleIntent2 = new Intent(HomeActivity.this, GradeScaleActivity.class);
+//                    startActivity(gradeScaleIntent2);
+//                }
             }
         });
-
-//        mBottomBar = BottomBar.attachShy((CoordinatorLayout) findViewById(R.id.myCoordinator),
-//                findViewById(R.id.myScrollingContent), savedInstanceState);
     }
 
     @Override
