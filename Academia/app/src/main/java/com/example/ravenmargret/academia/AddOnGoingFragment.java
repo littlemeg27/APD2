@@ -7,13 +7,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-
-/**
- * A simple {@link Fragment} subclass.
- */
 public class AddOnGoingFragment extends Fragment
 {
-
+    FirebaseD  database = FirebaseDatabase.getInstance();
+    DatabaseReference myRef = database.getReference("message");
 
     public AddOnGoingFragment()
     {
