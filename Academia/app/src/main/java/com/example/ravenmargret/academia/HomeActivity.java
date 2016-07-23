@@ -34,18 +34,16 @@ public class HomeActivity extends AppCompatActivity
 
         mBottomBar = BottomBar.attach(this, savedInstanceState);
         mBottomBar.setItems(R.menu.bottombar_menu);
-        mBottomBar.setOnMenuTabClickListener(listenerobject);
-
+        mBottomBar.setOnMenuTabClickListener(listenerObject1);
 
         mBottomBar.mapColorForTab(0, "#757575");
         mBottomBar.mapColorForTab(1, "#757575");
         mBottomBar.mapColorForTab(2, "#757575");
         mBottomBar.mapColorForTab(3, "#757575");
         mBottomBar.noTopOffset();
-        mBottomBar.setActiveTabColor("#009688");
     }
 
-    OnMenuTabClickListener listenerobject = new OnMenuTabClickListener()
+    OnMenuTabClickListener listenerObject1 = new OnMenuTabClickListener()
     {
         @Override
         public void onMenuTabSelected(@IdRes int menuItemId) {

@@ -29,24 +29,22 @@ public class OnGoingListActivity extends AppCompatActivity implements OnGoingLis
 
         mBottomBar = BottomBar.attach(this, savedInstanceState);
         mBottomBar.setItems(R.menu.bottombar_menu);
-        mBottomBar.setOnMenuTabClickListener(listenerobject);
-
+        mBottomBar.setOnMenuTabClickListener(listenerObject2);
 
         mBottomBar.mapColorForTab(0, "#757575");
         mBottomBar.mapColorForTab(1, "#757575");
         mBottomBar.mapColorForTab(2, "#757575");
         mBottomBar.mapColorForTab(3, "#757575");
         mBottomBar.noTopOffset();
-        mBottomBar.setActiveTabColor("#009688");
     }
 
-    OnMenuTabClickListener listenerobject = new OnMenuTabClickListener()
+    OnMenuTabClickListener listenerObject2 = new OnMenuTabClickListener()
     {
         @Override
         public void onMenuTabSelected(@IdRes int menuItemId) {
             if (menuItemId == R.id.action_home) {
-                Intent onGoingIntent = new Intent(OnGoingListActivity.this, HomeActivity.class);
-                startActivity(onGoingIntent);
+                Intent homeIntent = new Intent(OnGoingListActivity.this, HomeActivity.class);
+                startActivity(homeIntent);
             } else if (menuItemId == R.id.action_finished) {
                 Intent finishedIntent = new Intent(OnGoingListActivity.this, FinishedListActivity.class);
                 startActivity(finishedIntent);
@@ -59,8 +57,8 @@ public class OnGoingListActivity extends AppCompatActivity implements OnGoingLis
         @Override
         public void onMenuTabReSelected(@IdRes int menuItemId) {
             if (menuItemId == R.id.action_home) {
-                Intent onGoingIntent2 = new Intent(OnGoingListActivity.this, HomeActivity.class);
-                startActivity(onGoingIntent2);
+                Intent homeIntent2 = new Intent(OnGoingListActivity.this, HomeActivity.class);
+                startActivity(homeIntent2);
             } else if (menuItemId == R.id.action_finished) {
                 Intent finishedIntent2 = new Intent(OnGoingListActivity.this, FinishedListActivity.class);
                 startActivity(finishedIntent2);

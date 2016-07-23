@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.support.annotation.IdRes;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 import com.roughike.bottombar.BottomBar;
 import com.roughike.bottombar.OnMenuTabClickListener;
@@ -15,6 +16,7 @@ public class FinishedListActivity extends AppCompatActivity implements FinishedL
 {
     FragmentManager manager;
     private BottomBar mBottomBar;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -29,7 +31,7 @@ public class FinishedListActivity extends AppCompatActivity implements FinishedL
 
         mBottomBar = BottomBar.attach(this, savedInstanceState);
         mBottomBar.setItems(R.menu.bottombar_menu);
-        mBottomBar.setOnMenuTabClickListener(listenerobject);
+        mBottomBar.setOnMenuTabClickListener(listenerObject3);
 
 
         mBottomBar.mapColorForTab(0, "#757575");
@@ -37,18 +39,17 @@ public class FinishedListActivity extends AppCompatActivity implements FinishedL
         mBottomBar.mapColorForTab(2, "#757575");
         mBottomBar.mapColorForTab(3, "#757575");
         mBottomBar.noTopOffset();
-        mBottomBar.setActiveTabColor("#009688");
     }
 
-    OnMenuTabClickListener listenerobject = new OnMenuTabClickListener()
+    OnMenuTabClickListener listenerObject3 = new OnMenuTabClickListener()
     {
         @Override
         public void onMenuTabSelected(@IdRes int menuItemId)
         {
             if (menuItemId == R.id.action_home)
             {
-                Intent finishedIntent = new Intent(FinishedListActivity.this, HomeActivity.class);
-                startActivity(finishedIntent);
+                Intent homeIntent = new Intent(FinishedListActivity.this, HomeActivity.class);
+                startActivity(homeIntent);
             }
             else if (menuItemId == R.id.action_on_going)
             {
@@ -67,8 +68,8 @@ public class FinishedListActivity extends AppCompatActivity implements FinishedL
         {
             if (menuItemId == R.id.action_home)
             {
-                Intent onGoingIntent2 = new Intent(FinishedListActivity.this, HomeActivity.class);
-                startActivity(onGoingIntent2);
+                Intent homeIntent2 = new Intent(FinishedListActivity.this, HomeActivity.class);
+                startActivity(homeIntent2);
             }
             else if (menuItemId == R.id.action_on_going)
             {
