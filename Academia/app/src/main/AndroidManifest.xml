@@ -21,23 +21,23 @@
         <activity
             android:name=".AddOnGoingActivity"
             android:label="@string/title_activity_add_on_going"
-            android:theme="@style/Theme.AppCompat.Light" />
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".AddFinishedActivity"
             android:label="@string/title_activity_add_finished"
-            android:theme="@style/Theme.AppCompat.Light" />
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".GradeScaleActivity"
             android:label="@string/title_activity_grade_scale"
-            android:theme="@style/Theme.AppCompat.Light" />
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".OnGoingListActivity"
             android:label="@string/title_activity_on_going_list"
-            android:theme="@style/Theme.AppCompat.Light" />
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".FinishedListActivity"
             android:label="@string/title_activity_finished_list"
-            android:theme="@style/Theme.AppCompat.Light" />
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
 
     </application>
 

@@ -2,6 +2,7 @@ package com.example.ravenmargret.academia;
 
 import android.app.Fragment;
 import android.app.FragmentManager;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.IdRes;
 import android.support.design.widget.BottomSheetBehavior;
