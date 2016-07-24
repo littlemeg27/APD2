@@ -35,6 +35,4 @@
         android:id="@+id/projectGrade"
         android:layout_marginTop="15dp"/>
 
-
-
 </LinearLayout>

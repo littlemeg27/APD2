@@ -5,11 +5,11 @@
     <string name="Grade.Scale">Grade Scale</string>
     <string name="Home">Home</string>
     <string name="Finished">Finished</string>
-    <string name="title_activity_add_on_going">title_activity_add_on_going</string>
-    <string name="title_activity_add_finished">title_activity_add_finished</string>
-    <string name="title_activity_on_going_list">title_activity_on_going_list</string>
-    <string name="title_activity_grade_scale">title_activity_grade_scale</string>
-    <string name="title_activity_finished_list">title_activity_finished_list</string>
+    <string name="title_activity_add_on_going">Add On Going Classes</string>
+    <string name="title_activity_add_finished">Add Finished Classes</string>
+    <string name="title_activity_on_going_list">On Going Classes List</string>
+    <string name="title_activity_grade_scale">Grade Scale</string>
+    <string name="title_activity_finished_list">Finished Classes List</string>
     <string name="Add">Add</string>
     <string name="Save">Save</string>
     <string name="Edit">Edit</string>

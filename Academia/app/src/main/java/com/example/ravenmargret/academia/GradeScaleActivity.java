@@ -27,48 +27,55 @@ public class GradeScaleActivity extends AppCompatActivity
         GradeScaleFragment gradeScaleFragment = new GradeScaleFragment();
         showFragment(gradeScaleFragment);
 
-        mBottomBar = BottomBar.attach(this, savedInstanceState);
-        mBottomBar.setItems(R.menu.bottombar_menu);
-        mBottomBar.setOnMenuTabClickListener(listenerObject4);
-
-
-        mBottomBar.mapColorForTab(0, "#757575");
-        mBottomBar.mapColorForTab(1, "#757575");
-        mBottomBar.mapColorForTab(2, "#757575");
-        mBottomBar.mapColorForTab(3, "#757575");
-        mBottomBar.noTopOffset();
+//        mBottomBar = BottomBar.attach(this, savedInstanceState);
+//        mBottomBar.setItems(R.menu.bottombar_menu);
+//        mBottomBar.setOnMenuTabClickListener(listenerObject4);
+//
+//
+//        mBottomBar.mapColorForTab(0, "#757575");
+//        mBottomBar.mapColorForTab(1, "#757575");
+//        mBottomBar.mapColorForTab(2, "#757575");
+//        mBottomBar.mapColorForTab(3, "#757575");
+//        mBottomBar.noTopOffset();
     }
 
-    OnMenuTabClickListener listenerObject4 = new OnMenuTabClickListener()
-    {
-        @Override
-        public void onMenuTabSelected(@IdRes int menuItemId) {
-            if (menuItemId == R.id.action_home) {
-                Intent onGoingIntent = new Intent(GradeScaleActivity.this, HomeActivity.class);
-                startActivity(onGoingIntent);
-            } else if (menuItemId == R.id.action_finished) {
-                Intent finishedIntent = new Intent(GradeScaleActivity.this, FinishedListActivity.class);
-                startActivity(finishedIntent);
-            } else if (menuItemId == R.id.action_on_going) {
-                Intent gradeScaleIntent = new Intent(GradeScaleActivity.this, OnGoingListActivity.class);
-                startActivity(gradeScaleIntent);
-            }
-        }
+//    OnMenuTabClickListener listenerObject4 = new OnMenuTabClickListener()
+//    {
+//        @Override
+//        public void onMenuTabSelected(@IdRes int menuItemId) {
+//            if (menuItemId == R.id.action_home) {
+//                Intent onGoingIntent = new Intent(GradeScaleActivity.this, HomeActivity.class);
+//                startActivity(onGoingIntent);
+//            } else if (menuItemId == R.id.action_finished) {
+//                Intent finishedIntent = new Intent(GradeScaleActivity.this, FinishedListActivity.class);
+//                startActivity(finishedIntent);
+//            } else if (menuItemId == R.id.action_on_going) {
+//                Intent gradeScaleIntent = new Intent(GradeScaleActivity.this, OnGoingListActivity.class);
+//                startActivity(gradeScaleIntent);
+//            }
+//        }
+//
+//        @Override
+//        public void onMenuTabReSelected(@IdRes int menuItemId) {
+//            if (menuItemId == R.id.action_home) {
+//                Intent onGoingIntent2 = new Intent(GradeScaleActivity.this, HomeActivity.class);
+//                startActivity(onGoingIntent2);
+//            } else if (menuItemId == R.id.action_finished) {
+//                Intent finishedIntent2 = new Intent(GradeScaleActivity.this, FinishedListActivity.class);
+//                startActivity(finishedIntent2);
+//            } else if (menuItemId == R.id.action_on_going) {
+//                Intent gradeScaleIntent2 = new Intent(GradeScaleActivity.this, OnGoingListActivity.class);
+//                startActivity(gradeScaleIntent2);
+//            }
+//        }
+//    };
 
-        @Override
-        public void onMenuTabReSelected(@IdRes int menuItemId) {
-            if (menuItemId == R.id.action_home) {
-                Intent onGoingIntent2 = new Intent(GradeScaleActivity.this, HomeActivity.class);
-                startActivity(onGoingIntent2);
-            } else if (menuItemId == R.id.action_finished) {
-                Intent finishedIntent2 = new Intent(GradeScaleActivity.this, FinishedListActivity.class);
-                startActivity(finishedIntent2);
-            } else if (menuItemId == R.id.action_on_going) {
-                Intent gradeScaleIntent2 = new Intent(GradeScaleActivity.this, OnGoingListActivity.class);
-                startActivity(gradeScaleIntent2);
-            }
-        }
-    };
+//    @Override
+//    protected void onSaveInstanceState(Bundle outState)
+//    {
+//        super.onSaveInstanceState(outState);
+//        mBottomBar.onSaveInstanceState(outState);
+//    }
 
     private void showFragment(Fragment gradeScaleFrag)
     {
