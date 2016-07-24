@@ -5,6 +5,12 @@
     tools:context="com.example.ravenmargret.academia.AddOnGoingFragment"
     android:orientation="vertical">
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/addLine"
+        android:hint="Add"/>
+
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

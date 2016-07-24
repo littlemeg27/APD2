@@ -10,4 +10,7 @@
     <string name="title_activity_on_going_list">title_activity_on_going_list</string>
     <string name="title_activity_grade_scale">title_activity_grade_scale</string>
     <string name="title_activity_finished_list">title_activity_finished_list</string>
+    <string name="Add">Add</string>
+    <string name="Save">Save</string>
+    <string name="Edit">Edit</string>
 </resources>
