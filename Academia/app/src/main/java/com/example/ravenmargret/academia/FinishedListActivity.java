@@ -17,7 +17,6 @@ public class FinishedListActivity extends AppCompatActivity implements FinishedL
     FragmentManager manager;
     private BottomBar mBottomBar;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -32,7 +31,6 @@ public class FinishedListActivity extends AppCompatActivity implements FinishedL
         mBottomBar = BottomBar.attach(this, savedInstanceState);
         mBottomBar.setItems(R.menu.bottombar_menu);
         mBottomBar.setOnMenuTabClickListener(listenerObject3);
-
 
         mBottomBar.mapColorForTab(0, "#757575");
         mBottomBar.mapColorForTab(1, "#757575");
