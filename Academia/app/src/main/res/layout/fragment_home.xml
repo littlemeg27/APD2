@@ -9,8 +9,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:layout_marginLeft="10dp"
-        android:textSize="40sp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginBottom="30dp"
+        android:textSize="50sp"
         android:layout_gravity="center_vertical"
         android:text="Academia"/>
 
@@ -19,7 +20,8 @@
         android:layout_height="wrap_content"
         android:id="@+id/gpa"
         android:layout_marginTop="10dp"
-        android:layout_marginLeft="10dp"
+        android:layout_marginLeft="160dp"
+        android:textSize="20sp"
         android:text="GPA"/>
 
     <TextView
@@ -27,7 +29,9 @@
         android:layout_height="wrap_content"
         android:id="@+id/gpaTextView"
         android:layout_marginTop="10dp"
-        android:layout_marginLeft="10dp"
+        android:layout_marginLeft="165dp"
+        android:layout_marginBottom="30dp"
+        android:textSize="20sp"
         android:text="3.8"/>
 
     <TextView
@@ -35,7 +39,8 @@
         android:layout_height="wrap_content"
         android:id="@+id/average"
         android:layout_marginTop="10dp"
-        android:layout_marginLeft="10dp"
+        android:layout_marginLeft="145dp"
+        android:textSize="20sp"
         android:text="Average"/>
 
     <TextView
@@ -43,7 +48,9 @@
         android:layout_height="wrap_content"
         android:id="@+id/averageTextView"
         android:layout_marginTop="10dp"
-        android:layout_marginLeft="10dp"
+        android:layout_marginLeft="160dp"
+        android:layout_marginBottom="30dp"
+        android:textSize="20sp"
         android:text="3.67"/>
 
     <TextView
@@ -51,7 +58,8 @@
         android:layout_height="wrap_content"
         android:id="@+id/letterGradeFinal"
         android:layout_marginTop="10dp"
-        android:layout_marginLeft="10dp"
+        android:layout_marginLeft="125dp"
+        android:textSize="20sp"
         android:text="Letter Grade"/>
 
     <TextView
@@ -59,7 +67,8 @@
         android:layout_height="wrap_content"
         android:id="@+id/letterGradeFinalTextView"
         android:layout_marginTop="10dp"
-        android:layout_marginLeft="10dp"
+        android:layout_marginLeft="175dp"
+        android:textSize="20sp"
         android:text="A"/>
 
 </LinearLayout>

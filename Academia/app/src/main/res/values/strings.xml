@@ -1,16 +1,18 @@
 <resources>
     <string name="app_name">Academia</string>
     <string name="action_settings">Settings</string>
-    <string name="On.Going">On Going</string>
-    <string name="Grade.Scale">Grade Scale</string>
-    <string name="Home">Home</string>
-    <string name="Finished">Finished</string>
     <string name="title_activity_add_on_going">Add On Going Classes</string>
     <string name="title_activity_add_finished">Add Finished Classes</string>
     <string name="title_activity_on_going_list">On Going Classes List</string>
     <string name="title_activity_grade_scale">Grade Scale</string>
     <string name="title_activity_finished_list">Finished Classes List</string>
-    <string name="Add">Add</string>
-    <string name="Save">Save</string>
-    <string name="Edit">Edit</string>
+    <string name="action_add_on_going">Add a On Going Class</string>
+    <string name="action_add_finished">Add a Finished Class</string>
+    <string name="action_save_grade_scale">Save</string>
+    <string name="action_save_finished">Save</string>
+    <string name="action_save_on_going">Save</string>
+    <string name="action_grade_scale">Grade Scale</string>
+    <string name="action_on_going">On Going</string>
+    <string name="action_finished">Finished</string>
+    <string name="action_home">Home</string>
 </resources>

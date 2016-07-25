@@ -37,7 +37,7 @@ public class AddOnGoingActivity extends AppCompatActivity
     @Override
     public boolean onCreateOptionsMenu(Menu menu)
     {
-        getMenuInflater().inflate(R.menu.ongoingadd_menu, menu);
+        getMenuInflater().inflate(R.menu.on_going_add_menu, menu);
         return super.onCreateOptionsMenu(menu);
     }
 
@@ -47,9 +47,8 @@ public class AddOnGoingActivity extends AppCompatActivity
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_edit)
+        if (id == R.id.action_save_on_going)
         {
-
             return true;
         }
 

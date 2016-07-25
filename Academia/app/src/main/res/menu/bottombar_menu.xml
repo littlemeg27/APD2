@@ -4,25 +4,25 @@
     <item
         android:id="@+id/action_home"
         android:orderInCategory="100"
-        android:title="@string/Home"
+        android:title="@string/action_home"
         android:icon="@drawable/homeicon"/>
 
     <item
         android:id="@+id/action_on_going"
         android:orderInCategory="100"
-        android:title="@string/On.Going"
+        android:title="@string/action_on_going"
         android:icon="@drawable/assignmenticon"/>
 
     <item
         android:id="@+id/action_finished"
         android:orderInCategory="100"
-        android:title="@string/Finished"
+        android:title="@string/action_finished"
         android:icon="@drawable/assignmentturnedinicon"/>
 
     <item
         android:id="@+id/action_grade_scale"
         android:orderInCategory="100"
-        android:title="@string/Grade.Scale"
+        android:title="@string/action_grade_scale"
         android:icon="@drawable/gradescaleicon"/>
 
 </menu>

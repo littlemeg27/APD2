@@ -35,7 +35,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="30dp"
         android:inputType="numberDecimal"
         android:hint="GPA"
         android:id="@+id/gpa1"/>
@@ -70,7 +70,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="30dp"
         android:inputType="numberDecimal"
         android:hint="GPA"
         android:id="@+id/gpa2"/>
@@ -105,7 +105,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="30dp"
         android:inputType="numberDecimal"
         android:hint="GPA"
         android:id="@+id/gpa3"/>
@@ -140,7 +140,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="30dp"
         android:inputType="numberDecimal"
         android:hint="GPA"
         android:id="@+id/gpa4"/>
@@ -175,7 +175,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="30dp"
         android:inputType="numberDecimal"
         android:hint="GPA"
         android:id="@+id/gpa5"/>
@@ -210,7 +210,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="30dp"
         android:inputType="numberDecimal"
         android:hint="GPA"
         android:id="@+id/gpa6"/>
@@ -245,7 +245,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="30dp"
         android:inputType="numberDecimal"
         android:hint="GPA"
         android:id="@+id/gpa7"/>

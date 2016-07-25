@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.IdRes;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Menu;
 import android.view.MenuItem;
 
 import com.roughike.bottombar.BottomBar;
@@ -80,5 +81,25 @@ public class GradeScaleActivity extends AppCompatActivity
     private void showFragment(Fragment gradeScaleFrag)
     {
         manager.beginTransaction().replace(R.id.container, gradeScaleFrag, "gradeScaleFrag").commit();
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu)
+    {
+        getMenuInflater().inflate(R.menu.grade_scale_menu, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item)
+    {
+        //noinspection SimplifiableIfStatement
+        if (item.getItemId() == R.id.action_save_grade_scale)
+        {
+
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 }

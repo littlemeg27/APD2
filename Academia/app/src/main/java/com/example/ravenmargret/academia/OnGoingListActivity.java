@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.IdRes;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Menu;
 import android.view.MenuItem;
 
 import com.roughike.bottombar.BottomBar;
@@ -80,4 +81,24 @@ public class OnGoingListActivity extends AppCompatActivity implements OnGoingLis
 //        super.onSaveInstanceState(outState);
 //        mBottomBar.onSaveInstanceState(outState);
 //    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu)
+    {
+        getMenuInflater().inflate(R.menu.on_going_list_menu, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item)
+    {
+        int id = item.getItemId();
+
+        if (id == R.id.action_add_on_going)
+        {
+            Intent nextActivity = new Intent(this, AddOnGoingActivity.class);
+            startActivityForResult(nextActivity, 4040);
+        }
+        return super.onOptionsItemSelected(item);
+    }
 }
