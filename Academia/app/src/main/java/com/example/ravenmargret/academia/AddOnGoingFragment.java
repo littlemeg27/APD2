@@ -22,6 +22,7 @@ import java.util.ArrayList;
 public class AddOnGoingFragment extends Fragment implements View.OnClickListener
 {
     private DatabaseReference mDatabase;
+    //Firebase.setAndroidContext(this);
 
     Button addLineButton;
     EditText projectName;
