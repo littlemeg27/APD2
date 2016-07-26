@@ -25,38 +25,24 @@ public class AddOnGoingFragment extends Fragment implements View.OnClickListener
     //Firebase.setAndroidContext(this);
 
     Button addLineButton;
-    EditText projectName;
-    EditText projectWeight;
-    EditText projectGrade;
+    EditText projectNameTextView;
+    EditText projectWeightTextView;
+    EditText projectGradeTextView;
 
-    ArrayList<EditText> projectNameArrayList = new ArrayList<>();
-    ArrayList<EditText> projectWeightArrayList = new ArrayList<>();
-    ArrayList<EditText> projectGradeArrayList = new ArrayList<>();
+    ArrayList<EditText> editTextArrayList = new ArrayList<>();
 
     public AddOnGoingFragment()
     {
         // Required empty public constructor
     }
 
-    public ArrayList<EditText> projectNameArrayList()
+    public ArrayList<EditText> editTextArrayList()
     {
-        projectNameArrayList.add(projectName);
+        editTextArrayList.add(projectNameTextView);
+        editTextArrayList.add(projectWeightTextView);
+        editTextArrayList.add(projectGradeTextView);
 
-        return projectNameArrayList;
-    }
-
-    public ArrayList<EditText> projectWeightArrayList()
-    {
-        projectWeightArrayList.add(projectWeight);
-
-        return projectWeightArrayList;
-    }
-
-    public ArrayList<EditText> projectGradeArrayList()
-    {
-        projectGradeArrayList.add(projectGrade);
-
-        return projectGradeArrayList;
+        return editTextArrayList;
     }
 
     @Override
@@ -69,34 +55,27 @@ public class AddOnGoingFragment extends Fragment implements View.OnClickListener
         return inflater.inflate(R.layout.fragment_add_on_going, container, false);
     }
 
-//    @Override
-//    public void onActivityCreated(Bundle savedInstanceState)
-//    {
-//        super.onActivityCreated(savedInstanceState);
-//
-//        projectName = (EditText)getView().findViewById(R.id.projectName);
-//        projectWeight = (EditText)getView().findViewById(R.id.projectWeight);
-//        projectGrade = (EditText)getView().findViewById(R.id.projectGrade);
-//
-//        findViewById(R.id.fab_submit_post).setOnClickListener(new View.OnClickListener()
-//        {
-//            @Override
-//            public void onClick(View v)
-//            {
-//                submitPost();
-//            }
-//        });
-//    }
+    @Override
+    public void onActivityCreated(Bundle savedInstanceState)
+    {
+        super.onActivityCreated(savedInstanceState);
+
+        projectNameTextView = (EditText)getView().findViewById(R.id.projectNameTextView);
+        projectWeightTextView = (EditText)getView().findViewById(R.id.projectWeightTextView);
+        projectGradeTextView = (EditText)getView().findViewById(R.id.projectGradeTextView);
+
+        addLineButton = (Button)getView().findViewById(R.id.addLine);
+        addLineButton.setOnClickListener(this);
+    }
 
     @Override
     public void onClick(View v)
     {
-        addLineButton = (Button)getView().findViewById(R.id.addLine);
-        addLineButton.setOnClickListener(this);
+        String projectName = projectNameTextView.getText().toString();
+        Double projectWeight = Double.parseDouble(projectWeightTextView.getText().toString());
+        Double projectGrade = Double.parseDouble(projectGradeTextView.getText().toString());
 
-        projectNameArrayList();
-        projectWeightArrayList();
-        projectGradeArrayList();
+        editTextArrayList();
 
         Toast.makeText(getActivity(), "Line added", Toast.LENGTH_LONG).show();
     }

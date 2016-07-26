@@ -12,14 +12,20 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.ncapdevi.fragnav.FragNavController;
 import com.roughike.bottombar.BottomBar;
 import com.roughike.bottombar.OnMenuTabClickListener;
+
+import java.util.ArrayList;
+import java.util.List;
 
 
 public class HomeActivity extends AppCompatActivity
 {
     FragmentManager manager;
     private BottomBar mBottomBar;
+
+    List<Fragment> fragments = new ArrayList<>(6);
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -31,6 +37,15 @@ public class HomeActivity extends AppCompatActivity
 
         HomeFragment homeFragment = new HomeFragment();
         showFragment(homeFragment);
+
+//        fragments.add(HomeFragment.newInstance());
+//        fragments.add(OnGoingListFragment.newInstance());
+//        fragments.add(AddOnGoingFragment.newInstance());
+//        fragments.add(FinishedListFragment.newInstance());
+//        fragments.add(AddFinishedFragment.newInstance());
+//        fragments.add(GradeScaleFragment.newInstance());
+//
+//        FragNavController fragNavController = new FragNavController(getSupportFragmentManager(),R.id.container,fragments);
 
         mBottomBar = BottomBar.attach(this, savedInstanceState);
         mBottomBar.setItems(R.menu.bottombar_menu);

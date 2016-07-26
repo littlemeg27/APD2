@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:inputType="textCapWords"
         android:hint="Class Name"
-        android:id="@+id/className"
+        android:id="@+id/classNameTextView"
         android:layout_marginTop="15dp"/>
 
     <EditText
@@ -19,7 +19,7 @@
         android:layout_height="wrap_content"
         android:inputType="numberDecimal"
         android:hint="Class Grade"
-        android:id="@+id/classGrade"
+        android:id="@+id/classGradeTextView"
         android:layout_marginTop="15dp"/>
 
     <EditText
@@ -27,7 +27,7 @@
         android:layout_height="wrap_content"
         android:inputType="number"
         android:hint="Class Weight"
-        android:id="@+id/classWeight"
+        android:id="@+id/classWeightTextView"
         android:layout_marginTop="15dp"/>
 
 </LinearLayout>

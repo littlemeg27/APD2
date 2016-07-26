@@ -7,7 +7,7 @@ public class OnGoingClass implements Serializable
     private static final long serialVersionUID = 8736847634070552888L;
     String mProjectName;
     String mProjectWeight;
-    int mProjectGrade;
+    double mProjectGrade;
 
     public OnGoingClass(String mProjectName, String mProjectWeight, int mProjectGrade)
     {
@@ -18,12 +18,12 @@ public class OnGoingClass implements Serializable
 
     public String getmProjectName() {return mProjectName;}
     public String getmProjectWeight() {return mProjectWeight;}
-    public int getmProjectGrade() {return mProjectGrade;}
+    public double getmProjectGrade() {return mProjectGrade;}
 
 
     public void setmProjectName(String mProjectName) {this.mProjectName = mProjectName;}
     public void setmProjectWeight(String mProjectWeight) {this.mProjectWeight = mProjectWeight;}
-    public void setmProjectGrade(int mProjectGrade) {this.mProjectGrade = mProjectGrade;}
+    public void setmProjectGrade(double mProjectGrade) {this.mProjectGrade = mProjectGrade;}
 
     @Override
     public String toString()

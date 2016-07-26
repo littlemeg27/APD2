@@ -16,7 +16,7 @@
         android:layout_height="wrap_content"
         android:inputType="textCapWords"
         android:hint="Project Name"
-        android:id="@+id/projectName"
+        android:id="@+id/projectNameTextView"
         android:layout_marginTop="15dp"/>
 
     <EditText
@@ -24,7 +24,7 @@
         android:layout_height="wrap_content"
         android:inputType="number"
         android:hint="Project Weight"
-        android:id="@+id/projectWeight"
+        android:id="@+id/projectWeightTextView"
         android:layout_marginTop="15dp"/>
 
     <EditText
@@ -32,7 +32,7 @@
         android:layout_height="wrap_content"
         android:inputType="numberDecimal"
         android:hint="Project Grade"
-        android:id="@+id/projectGrade"
+        android:id="@+id/projectGradeTextView"
         android:layout_marginTop="15dp"
         android:layout_marginBottom="30dp" />
 
