@@ -22,6 +22,7 @@ public class AddFinishedFragment extends Fragment implements View.OnClickListene
     String className;
     Double classWeight;
     Double classGrade;
+    String classID = "";
 
     private DatabaseReference mDatabase;
 
@@ -50,6 +51,13 @@ public class AddFinishedFragment extends Fragment implements View.OnClickListene
         classGradeTextView = (EditText)getView().findViewById(R.id.classGradeTextView);
     }
 
+    private void writeNewUser(String classID, String className, Double classWeight, Double classGrade)
+    {
+        FinishedClass finished = new FinishedClass(className, classWeight, classGrade);
+
+        mDatabase.child("finishedClass").child(classID).setValue(finished);
+    }
+
     @Override
     public void onClick(View v)
     {
@@ -57,17 +65,8 @@ public class AddFinishedFragment extends Fragment implements View.OnClickListene
         classWeight = Double.parseDouble(classWeightTextView.getText().toString());
         classGrade = Double.parseDouble(classGradeTextView.getText().toString());
 
-        writeNewUser(className, classWeight, classGrade);
+        Toast.makeText(getActivity(), "Class Added", Toast.LENGTH_LONG).show();
 
-        Toast.makeText(getActivity(), "Saved", Toast.LENGTH_LONG).show();
-    }
-
-    private void writeNewUser(String className, Double classWeight, Double classGrade)
-    {
-        FinishedClass finished = new FinishedClass(className, classWeight, classGrade);
-
-        mDatabase.child("name").child(className).setValue(finished);
-        mDatabase.child("weight").child(classWeight).setValue(finished);
-        mDatabase.child("grade").child(classGrade).setValue(finished);
+        writeNewUser(classID, className, classWeight, classGrade);
     }
 }
