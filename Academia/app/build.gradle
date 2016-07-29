@@ -29,6 +29,8 @@ dependencies {
     compile 'com.google.firebase:firebase-database:9.2.1'
     compile 'com.android.support:percent:23.0.1'
     compile 'com.ncapdevi:frag-nav:1.0.3'
+    compile 'com.google.firebase:firebase-auth:9.2.1'
+    compile 'com.google.android.gms:play-services-auth:9.2.1'
 }
 
 apply plugin: 'com.google.gms.google-services'

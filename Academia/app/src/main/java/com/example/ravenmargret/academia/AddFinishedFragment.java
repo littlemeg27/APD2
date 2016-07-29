@@ -13,7 +13,7 @@ import android.widget.Toast;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-public class AddFinishedFragment extends Fragment implements View.OnClickListener
+public class AddFinishedFragment extends Fragment
 {
     EditText classNameTextView;
     EditText classWeightTextView;
@@ -22,9 +22,8 @@ public class AddFinishedFragment extends Fragment implements View.OnClickListene
     String className;
     Double classWeight;
     Double classGrade;
-    String classID = "";
 
-    private DatabaseReference mDatabase;
+    private DatabaseReference finishedDatabase;
 
     public AddFinishedFragment()
     {
@@ -44,29 +43,27 @@ public class AddFinishedFragment extends Fragment implements View.OnClickListene
     {
         super.onActivityCreated(savedInstanceState);
 
-        mDatabase = FirebaseDatabase.getInstance().getReference();
+        finishedDatabase = FirebaseDatabase.getInstance().getReference();
 
         classNameTextView = (EditText)getView().findViewById(R.id.classNameTextView);
         classWeightTextView = (EditText)getView().findViewById(R.id.classWeightTextView);
         classGradeTextView = (EditText)getView().findViewById(R.id.classGradeTextView);
-    }
 
-    private void writeNewUser(String classID, String className, Double classWeight, Double classGrade)
-    {
-        FinishedClass finished = new FinishedClass(className, classWeight, classGrade);
-
-        mDatabase.child("finishedClass").child(classID).setValue(finished);
-    }
-
-    @Override
-    public void onClick(View v)
-    {
         className = classNameTextView.getText().toString();
         classWeight = Double.parseDouble(classWeightTextView.getText().toString());
         classGrade = Double.parseDouble(classGradeTextView.getText().toString());
+    }
+
+    public void writeNewUser(String classID, String className, Double classWeight, Double classGrade)
+    {
+        FinishedClass finished = new FinishedClass(className, classWeight, classGrade);
+
+        finishedDatabase.child("finished").child(classID).setValue(finished);
 
         Toast.makeText(getActivity(), "Class Added", Toast.LENGTH_LONG).show();
-
-        writeNewUser(classID, className, classWeight, classGrade);
     }
+
+
+
+
 }

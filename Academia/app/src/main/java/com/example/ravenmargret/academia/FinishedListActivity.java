@@ -105,16 +105,16 @@ public class FinishedListActivity extends AppCompatActivity implements FinishedL
     @Override
     public boolean onOptionsItemSelected(MenuItem item)
     {
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_add_finished)
-        {
+//        int id = item.getItemId();
+//
+//        //noinspection SimplifiableIfStatement
+//        if (id == R.id.action_add_finished)
+//        {
             Intent nextActivity = new Intent(this, AddFinishedActivity.class);
             startActivityForResult(nextActivity, 4040);
-
-            return true;
-        }
+//
+//            return true;
+//        }
 
         return super.onOptionsItemSelected(item);
     }

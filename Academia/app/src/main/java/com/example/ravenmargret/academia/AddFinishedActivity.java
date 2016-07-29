@@ -19,6 +19,11 @@ import com.roughike.bottombar.OnTabClickListener;
 public class AddFinishedActivity extends AppCompatActivity
 {
     FragmentManager manager;
+    String cid;
+    String name;
+    Double weight;
+    Double grade;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -55,6 +60,9 @@ public class AddFinishedActivity extends AppCompatActivity
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_save_finished)
         {
+            AddFinishedFragment fragment = (AddFinishedFragment) getFragmentManager().findFragmentById(R.id.container);
+            fragment.writeNewUser(cid, name, weight, grade);
+
             return true;
         }
 

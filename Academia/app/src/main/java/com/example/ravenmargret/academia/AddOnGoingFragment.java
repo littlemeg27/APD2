@@ -2,6 +2,7 @@ package com.example.ravenmargret.academia;
 
 
 import android.app.Fragment;
+import android.content.Context;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -9,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.google.firebase.database.DataSnapshot;
@@ -19,37 +21,30 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
-public class AddOnGoingFragment extends Fragment implements View.OnClickListener
+public class AddOnGoingFragment extends Fragment
 {
-    private DatabaseReference mDatabase;
-    //Firebase.setAndroidContext(this);
+    private DatabaseReference onGoingDatabase;
 
-    Button addLineButton;
-    EditText projectNameTextView;
-    EditText projectWeightTextView;
-    EditText projectGradeTextView;
+    EditText assignmentNameTextView;
+    EditText assignmentWeightTextView;
+    EditText assignmentGradeTextView;
 
-    ArrayList<EditText> editTextArrayList = new ArrayList<>();
+    String assignmentName;
+    Double assignmentWeight;
+    Double assignmentGrade;
+
+    ArrayList<String> editTextArray = new ArrayList<>();
 
     public AddOnGoingFragment()
     {
         // Required empty public constructor
     }
 
-    public ArrayList<EditText> editTextArrayList()
-    {
-        editTextArrayList.add(projectNameTextView);
-        editTextArrayList.add(projectWeightTextView);
-        editTextArrayList.add(projectGradeTextView);
-
-        return editTextArrayList;
-    }
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState)
     {
-        mDatabase = FirebaseDatabase.getInstance().getReference();
+        onGoingDatabase = FirebaseDatabase.getInstance().getReference();
 
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_add_on_going, container, false);
@@ -60,23 +55,30 @@ public class AddOnGoingFragment extends Fragment implements View.OnClickListener
     {
         super.onActivityCreated(savedInstanceState);
 
-        projectNameTextView = (EditText)getView().findViewById(R.id.projectNameTextView);
-        projectWeightTextView = (EditText)getView().findViewById(R.id.projectWeightTextView);
-        projectGradeTextView = (EditText)getView().findViewById(R.id.projectGradeTextView);
+        assignmentNameTextView = (EditText)getView().findViewById(R.id.assignmentNameTextView);
+        assignmentWeightTextView = (EditText)getView().findViewById(R.id.assignmentWeightTextView);
+        assignmentGradeTextView = (EditText)getView().findViewById(R.id.assignmentGradeTextView);
 
-        addLineButton = (Button)getView().findViewById(R.id.addLine);
-        addLineButton.setOnClickListener(this);
+        assignmentName = assignmentNameTextView.getText().toString();
+        assignmentWeight = Double.parseDouble(assignmentWeightTextView.getText().toString());
+        assignmentGrade = Double.parseDouble(assignmentGradeTextView.getText().toString());
     }
 
-    @Override
-    public void onClick(View v)
+    public void createNewLine(Bundle savedInstanceState)
     {
-        String projectName = projectNameTextView.getText().toString();
-        Double projectWeight = Double.parseDouble(projectWeightTextView.getText().toString());
-        Double projectGrade = Double.parseDouble(projectGradeTextView.getText().toString());
+        //LinearLayout item = (LinearLayout)getView().findViewbyId(R.id.action_add_on_going);
 
-        editTextArrayList();
+        View child = getActivity().getLayoutInflater().inflate(R.layout.fragment_add_on_going, null);
+        //item.addView(child);
 
         Toast.makeText(getActivity(), "Line added", Toast.LENGTH_LONG).show();
     }
+
+    public void writeNewUser(String classID, String className, Double classWeight, Double classGrade)
+    {
+        FinishedClass finished = new FinishedClass(className, classWeight, classGrade);
+
+        onGoingDatabase.child("onGoing").child(classID).setValue(finished);
+    }
+
 }

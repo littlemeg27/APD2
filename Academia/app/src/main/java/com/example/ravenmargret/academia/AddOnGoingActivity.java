@@ -8,6 +8,7 @@ import android.support.annotation.IdRes;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 import com.roughike.bottombar.BottomBar;
 import com.roughike.bottombar.OnMenuTabClickListener;
@@ -54,5 +55,4 @@ public class AddOnGoingActivity extends AppCompatActivity
 
         return super.onOptionsItemSelected(item);
     }
-
 }

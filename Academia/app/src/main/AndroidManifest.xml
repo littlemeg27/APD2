@@ -14,15 +14,14 @@
             android:theme="@style/Theme.AppCompat.Light">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".AddOnGoingActivity"
             android:label="@string/title_activity_add_on_going"
             android:theme="@style/Theme.AppCompat.Light" />
-
         <activity
             android:name=".AddFinishedActivity"
             android:label="@string/title_activity_add_finished"
@@ -40,6 +39,7 @@
             android:label="@string/title_activity_finished_list"
             android:theme="@style/Theme.AppCompat.Light" />
 
+        <activity android:name=".SignInActivity"></activity>
     </application>
 
 </manifest>
