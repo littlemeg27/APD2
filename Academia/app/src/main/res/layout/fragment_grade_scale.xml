@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:inputType="textCapCharacters"
         android:hint="Letter Grade"
-        android:id="@+id/letterGrade1" />
+        android:id="@+id/letterGrade1TextView" />
 
     <EditText
         android:layout_width="130dp"
@@ -21,7 +21,7 @@
         android:layout_gravity="left"
         android:inputType="number"
         android:hint="Grade 1"
-        android:id="@+id/firstGrade1"/>
+        android:id="@+id/firstGrade1TextView"/>
 
     <EditText
         android:layout_width="130dp"
@@ -30,7 +30,7 @@
         android:layout_gravity="right"
         android:inputType="number"
         android:hint="Grade 2"
-        android:id="@+id/secondGrade1" />
+        android:id="@+id/secondGrade1TextView" />
 
     <EditText
         android:layout_width="match_parent"
@@ -38,7 +38,7 @@
         android:layout_marginBottom="30dp"
         android:inputType="numberDecimal"
         android:hint="GPA"
-        android:id="@+id/gpa1"/>
+        android:id="@+id/gpa1TextView"/>
 
     <!--Second Grade-->
 
@@ -47,7 +47,7 @@
         android:layout_height="wrap_content"
         android:inputType="textCapCharacters"
         android:hint="Letter Grade"
-        android:id="@+id/letterGrade2" />
+        android:id="@+id/letterGrade2TextView" />
 
     <EditText
         android:layout_width="130dp"
@@ -56,7 +56,7 @@
         android:layout_gravity="left"
         android:inputType="number"
         android:hint="Grade 1"
-        android:id="@+id/firstGrade2"/>
+        android:id="@+id/firstGrade2TextView"/>
 
     <EditText
         android:layout_width="130dp"
@@ -65,7 +65,7 @@
         android:layout_gravity="right"
         android:inputType="number"
         android:hint="Grade 2"
-        android:id="@+id/secondGrade2" />
+        android:id="@+id/secondGrade2TextView" />
 
     <EditText
         android:layout_width="match_parent"
@@ -73,7 +73,7 @@
         android:layout_marginBottom="30dp"
         android:inputType="numberDecimal"
         android:hint="GPA"
-        android:id="@+id/gpa2"/>
+        android:id="@+id/gpa2TextView"/>
 
     <!--Third Grade-->
 
@@ -82,7 +82,7 @@
         android:layout_height="wrap_content"
         android:inputType="textCapCharacters"
         android:hint="Letter Grade"
-        android:id="@+id/letterGrade3" />
+        android:id="@+id/letterGrade3TextView" />
 
     <EditText
         android:layout_width="130dp"
@@ -91,7 +91,7 @@
         android:layout_gravity="left"
         android:inputType="number"
         android:hint="Grade 1"
-        android:id="@+id/firstGrade3"/>
+        android:id="@+id/firstGrade3TextView"/>
 
     <EditText
         android:layout_width="130dp"
@@ -100,7 +100,7 @@
         android:layout_gravity="right"
         android:inputType="number"
         android:hint="Grade 2"
-        android:id="@+id/secondGrade3" />
+        android:id="@+id/secondGrade3TextView" />
 
     <EditText
         android:layout_width="match_parent"
@@ -108,7 +108,7 @@
         android:layout_marginBottom="30dp"
         android:inputType="numberDecimal"
         android:hint="GPA"
-        android:id="@+id/gpa3"/>
+        android:id="@+id/gpa3TextView"/>
 
     <!--Fourth Grade-->
 
@@ -117,7 +117,7 @@
         android:layout_height="wrap_content"
         android:inputType="textCapCharacters"
         android:hint="Letter Grade"
-        android:id="@+id/letterGrade4" />
+        android:id="@+id/letterGrade4TextView" />
 
     <EditText
         android:layout_width="130dp"
@@ -126,7 +126,7 @@
         android:layout_gravity="left"
         android:inputType="number"
         android:hint="Grade 1"
-        android:id="@+id/firstGrade4"/>
+        android:id="@+id/firstGrade4TextView"/>
 
     <EditText
         android:layout_width="130dp"
@@ -135,7 +135,7 @@
         android:layout_gravity="right"
         android:inputType="number"
         android:hint="Grade 2"
-        android:id="@+id/secondGrade4" />
+        android:id="@+id/secondGrade4TextView" />
 
     <EditText
         android:layout_width="match_parent"
@@ -143,7 +143,7 @@
         android:layout_marginBottom="30dp"
         android:inputType="numberDecimal"
         android:hint="GPA"
-        android:id="@+id/gpa4"/>
+        android:id="@+id/gpa4TextView"/>
 
     <!--Fifth Grade-->
 
@@ -152,7 +152,7 @@
         android:layout_height="wrap_content"
         android:inputType="textCapCharacters"
         android:hint="Letter Grade"
-        android:id="@+id/letterGrade5" />
+        android:id="@+id/letterGrade5TextView" />
 
     <EditText
         android:layout_width="130dp"
@@ -161,7 +161,7 @@
         android:layout_gravity="left"
         android:inputType="number"
         android:hint="Grade 1"
-        android:id="@+id/firstGrade5"/>
+        android:id="@+id/firstGrade5TextView"/>
 
     <EditText
         android:layout_width="130dp"
@@ -170,7 +170,7 @@
         android:layout_gravity="right"
         android:inputType="number"
         android:hint="Grade 2"
-        android:id="@+id/secondGrade5" />
+        android:id="@+id/secondGrade5TextView" />
 
     <EditText
         android:layout_width="match_parent"
@@ -178,7 +178,7 @@
         android:layout_marginBottom="30dp"
         android:inputType="numberDecimal"
         android:hint="GPA"
-        android:id="@+id/gpa5"/>
+        android:id="@+id/gpa5TextView"/>
 
     <!--Sixth Grade-->
 
@@ -187,7 +187,7 @@
         android:layout_height="wrap_content"
         android:inputType="textCapCharacters"
         android:hint="Letter Grade"
-        android:id="@+id/letterGrade6" />
+        android:id="@+id/letterGrade6TextView" />
 
     <EditText
         android:layout_width="130dp"
@@ -196,7 +196,7 @@
         android:layout_gravity="left"
         android:inputType="number"
         android:hint="Grade 1"
-        android:id="@+id/firstGrade6"/>
+        android:id="@+id/firstGrade6TextView"/>
 
     <EditText
         android:layout_width="130dp"
@@ -205,7 +205,7 @@
         android:layout_gravity="right"
         android:inputType="number"
         android:hint="Grade 2"
-        android:id="@+id/secondGrade6" />
+        android:id="@+id/secondGrade6TextView" />
 
     <EditText
         android:layout_width="match_parent"
@@ -213,7 +213,7 @@
         android:layout_marginBottom="30dp"
         android:inputType="numberDecimal"
         android:hint="GPA"
-        android:id="@+id/gpa6"/>
+        android:id="@+id/gpa6TextView"/>
 
     <!--Seventh Grade-->
 
@@ -222,7 +222,7 @@
         android:layout_height="wrap_content"
         android:inputType="textCapCharacters"
         android:hint="Letter Grade"
-        android:id="@+id/letterGrade7" />
+        android:id="@+id/letterGrade7TextView" />
 
     <EditText
         android:layout_width="130dp"
@@ -231,7 +231,7 @@
         android:layout_gravity="left"
         android:inputType="number"
         android:hint="Grade 1"
-        android:id="@+id/firstGrade7"/>
+        android:id="@+id/firstGrade7TextView"/>
 
     <EditText
         android:layout_width="130dp"
@@ -240,7 +240,7 @@
         android:layout_gravity="right"
         android:inputType="number"
         android:hint="Grade 2"
-        android:id="@+id/secondGrade7" />
+        android:id="@+id/secondGrade7TextView" />
 
     <EditText
         android:layout_width="match_parent"
@@ -248,7 +248,7 @@
         android:layout_marginBottom="30dp"
         android:inputType="numberDecimal"
         android:hint="GPA"
-        android:id="@+id/gpa7"/>
+        android:id="@+id/gpa7TextView"/>
 
     <!--Eighth Grade-->
 
@@ -257,7 +257,7 @@
         android:layout_height="wrap_content"
         android:inputType="textCapCharacters"
         android:hint="Letter Grade"
-        android:id="@+id/letterGrade8" />
+        android:id="@+id/letterGrade8TextView" />
 
     <EditText
         android:layout_width="130dp"
@@ -266,7 +266,7 @@
         android:layout_gravity="left"
         android:inputType="number"
         android:hint="Grade 1"
-        android:id="@+id/firstGrade8"/>
+        android:id="@+id/firstGrade8TextView"/>
 
     <EditText
         android:layout_width="130dp"
@@ -275,13 +275,13 @@
         android:layout_gravity="right"
         android:inputType="number"
         android:hint="Grade 2"
-        android:id="@+id/secondGrade8" />
+        android:id="@+id/secondGrade8TextView" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="numberDecimal"
         android:hint="GPA"
-        android:id="@+id/gpa8"/>
+        android:id="@+id/gpa8TextView"/>
 
 </LinearLayout>

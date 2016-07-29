@@ -6,24 +6,28 @@ public class Scale implements Serializable
 {
     private static final long serialVersionUID = 8736847634070552888L;
     String mLetterGrade;
-    String mNumberGrade;
-    double mGPAValue;
+    Double mNumberGrade1;
+    Double mNumberGrade2;
+    Double mGPAValue;
 
-    public Scale(String mLetterGrade, String mNumberGrade, int mGPAValue)
+    public Scale(String mLetterGrade, Double mNumberGrade1, Double mNumberGrade2, Double mGPAValue)
     {
         this.mLetterGrade = mLetterGrade;
-        this.mNumberGrade = mNumberGrade;
+        this.mNumberGrade1 = mNumberGrade1;
+        this.mNumberGrade2 = mNumberGrade2;
         this.mGPAValue = mGPAValue;
     }
 
     public String getmLetterGrade() {return mLetterGrade;}
-    public String getmNumberGrade() {return mNumberGrade;}
-    public double getmGPAValue() {return mGPAValue;}
+    public Double getmNumberGrade1() {return mNumberGrade1;}
+    public Double getmNumberGrade2() {return mNumberGrade2;}
+    public Double getmGPAValue() {return mGPAValue;}
 
 
     public void setmLetterGrade(String mLetterGrade) {this.mLetterGrade = mLetterGrade;}
-    public void setmNumberGrade(String mNumberGrade) {this.mNumberGrade = mNumberGrade;}
-    public void setmGPAValue(double mGPAValue) {this.mGPAValue = mGPAValue;}
+    public void setmNumberGrade1(Double mNumberGrade1) {this.mNumberGrade1 = mNumberGrade1;}
+    public void setmNumberGrade2(Double mNumberGrade2) {this.mNumberGrade2 = mNumberGrade2;}
+    public void setmGPAValue(Double mGPAValue) {this.mGPAValue = mGPAValue;}
 
     @Override
     public String toString()
@@ -31,16 +35,16 @@ public class Scale implements Serializable
         return mLetterGrade;
     }
 
-    @Override
-    public boolean equals(Object o)
-    {
-        Scale scaleCheck = (Scale)o;
-
-        if (scaleCheck.mLetterGrade.equals(mLetterGrade) && scaleCheck.mNumberGrade.equals(mNumberGrade) && scaleCheck.mGPAValue == mGPAValue)
-        {
-            return true;
-        }
-
-        return false;
-    }
+//    @Override
+//    public boolean equals(Object o)
+//    {
+//        Scale scaleCheck = (Scale)o;
+//
+//        if (scaleCheck.mLetterGrade.equals(mLetterGrade) && scaleCheck.mNumberGrade.equals(mNumberGrade) && scaleCheck.mGPAValue == mGPAValue)
+//        {
+//            return true;
+//        }
+//
+//        return false;
+//    }
 }

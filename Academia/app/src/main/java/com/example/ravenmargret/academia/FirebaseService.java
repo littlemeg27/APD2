@@ -17,6 +17,9 @@ public class FirebaseService
     FirebaseDatabase finishedDatabase = FirebaseDatabase.getInstance();
     DatabaseReference finishedRef = finishedDatabase.getReference("finished");
 
+    FirebaseDatabase gradeScaleDatabase = FirebaseDatabase.getInstance();
+    DatabaseReference gradeScaleRef = gradeScaleDatabase.getReference("gradeScale");
+
     public void getOnGoingData()
     {
         onGoingRef.addValueEventListener(new ValueEventListener()
@@ -42,6 +45,28 @@ public class FirebaseService
     public void getFinishedData()
     {
         finishedRef.addValueEventListener(new ValueEventListener()
+        {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot)
+            {
+                // This method is called once with the initial value and again
+                // whenever data at this location is updated.
+                String value = dataSnapshot.getValue(String.class);
+                //Log.d(TAG, "Value is: " + value);
+            }
+
+            @Override
+            public void onCancelled(DatabaseError error)
+            {
+                // Failed to read value
+                //Log.w(TAG, "Failed to read value.", error.toException());
+            }
+        });
+    }
+
+    public void getGradeScaleData()
+    {
+        gradeScaleRef.addValueEventListener(new ValueEventListener()
         {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot)
