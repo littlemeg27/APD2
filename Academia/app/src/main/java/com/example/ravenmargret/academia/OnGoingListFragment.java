@@ -2,10 +2,20 @@ package com.example.ravenmargret.academia;
 
 import android.app.Activity;
 import android.app.Fragment;
+import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 public class OnGoingListFragment extends Fragment
 {
     private OnListFragmentInteractionListener mListener;
+    private DatabaseReference onGoingDatabase;
 
     public OnGoingListFragment()
     {
@@ -16,6 +26,7 @@ public class OnGoingListFragment extends Fragment
     public void onAttach(Activity activity)
     {
         super.onAttach(activity);
+        onGoingDatabase = FirebaseDatabase.getInstance().getReference();
 
         try
         {
@@ -27,6 +38,7 @@ public class OnGoingListFragment extends Fragment
                     + " must implement OnFragmentInteractionListener");
         }
     }
+
 //    @Override
 //    public void onActivityCreated(Bundle savedInstanceState)
 //    {
@@ -63,8 +75,6 @@ public class OnGoingListFragment extends Fragment
 //        ArrayAdapter<Form> formArrayAdapter = new ArrayAdapter<Form>(getActivity(), android.R.layout.simple_list_item_1, formObject);
 //        setListAdapter(formArrayAdapter);
 //    }
-
-
 
     public interface OnListFragmentInteractionListener
     {
